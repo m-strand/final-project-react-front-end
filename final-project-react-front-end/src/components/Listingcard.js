@@ -2,9 +2,8 @@ import React from React.js;
 
 function Listingcard ({image, location, rating, dates, price}) {
     return (
-        <div>
+        <div className="listingCard">
             <img src={image}/>
-            <button>HEART REACT</button>
             <p>{location}</p>
             <p>{rating}</p>
             <p>{dates}</p>
