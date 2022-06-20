@@ -6,6 +6,7 @@ function Listingcard ({image, location, rating, dates, price}) {
             <img src={image}/>
             <p>{location}</p>
             <p>{rating}</p>
+            <p>{distance}</p>
             <p>{dates}</p>
             <p>{price}</p>
         </div>
