@@ -11,10 +11,10 @@ function FilterType () {
     },[]);
 
     return (
-        <nav>
+        <nav className="filter-component">
             {filters.map((filter) => {
                 <NavLink className="filterIcon" to={filter.pathway}>
-                    <img src={filter.image} /> 
+                    <img className="filterImg" src={filter.image} /> 
                     <p>{filter.name}</p>
                 </NavLink>
             })};

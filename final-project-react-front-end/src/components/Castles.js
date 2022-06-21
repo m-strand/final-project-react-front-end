@@ -11,7 +11,7 @@ function Castle () {
     },[]);
     
     return (
-        <div className="listingsDiv">
+        <div className="listing-component">
         {castleListings.map((listing) => {<Listingcard id={listing.id} image={listing.image} location={listing.location} rating={listing.rating} dates={listing.dates} price={listing.price} />})}
         </div>
     );
