@@ -2,9 +2,15 @@ import React, {useState} from React.js;
 
 function Footer () {
     const [isHovering, setHover] = useState("false");
+    const [menuUp, setMenu] = useState("false");
     function handleHoverToggle () {
         setHover(!isHovering);
     }
+
+    function handleArrowClick () {
+        setMenu(!menuUp);
+    }
+    
     return (
         <div className='footer'>
             <div className="left-container">
@@ -17,13 +23,16 @@ function Footer () {
                 <span>·</span>
                 <p className={isHovering ? "hover": null} onMouseEnter={handleHoverToggle} onMouseLeave={handleHoverToggle}>Destinations</p>
             </div>
-            <div className="right-container">
+            
+                {menuUp ? <FooterDrop/>: 
+                <div className="right-container">
                 <span className={isHovering ? "hoverFooter material-icons btn container-element foot-lang": "material-icons btn container-element foot-lang"}>language</span>
                 <p className={isHovering ? "hoverFooter container-element": "container-element"} onMouseEnter={handleHoverToggle} onMouseLeave={handleHoverToggle}>English (US)</p>
                 <p className={isHovering ? "hoverFooter container-element": "container-element"} onMouseEnter={handleHoverToggle} onMouseLeave={handleHoverToggle}><span>$</span> USD</p>
                 <p className={isHovering ? "hoverFooter container-element": "container-element"} onMouseEnter={handleHoverToggle} onMouseLeave={handleHoverToggle}>Support & Resources</p>
-                <span className="material-icons more-info">keyboard_arrow_up</span>
-            </div>
+                <span onClick={handleArrowClick} className="material-icons more-info">keyboard_arrow_up</span>
+                </div>
+                }
         </div>
     );
 }

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function FilterType () {
     const [filters, setFilters] = useState([]);
     useEffect(() => {
-        fetch(/*Add destination URL*/)
+        fetch("http://localhost:3000/")
         .then((response) => response.json())
         .then((data) => setFilters(data.types));
 

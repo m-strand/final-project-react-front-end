@@ -23,6 +23,7 @@ function Header () {
                     <i className="material-icons user-icons">menu</i>
                     <i className="material-icons user-icons">person</i>
                 </button> 
+                {menuUp ? <HeaderDrop/> : null}
             </div>
         </div>
     );

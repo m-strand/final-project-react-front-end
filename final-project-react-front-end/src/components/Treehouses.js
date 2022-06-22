@@ -5,7 +5,7 @@ function Treehouses () {
     const [treehouseListings, setTreehouseListings] = useState([]);
 
     useEffect(() => {
-        fetch(/*Add destination URL!!!*/)
+        fetch("http://localhost:3000/")
         .then((response) => response.json())
         .then((data) => {setArticListings(data.treehouses)});
     },[]);
