@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from React.js;
+import React, {useState, useEffect} from 'react';
 import Listingcard from "./Listingcard.js";
 
 function IconicCities () {
@@ -7,7 +7,7 @@ function IconicCities () {
     useEffect(() => {
         fetch("http://localhost:3000/")
         .then((response) => response.json())
-        .then((data) => {setCitiesListings(data.iconic-cities)});
+        .then((data) => {setCitiesListings(data.iconicCities)});
     },[]);
     
     return (

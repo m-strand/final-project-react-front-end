@@ -1,4 +1,5 @@
-import React, {useState} from React.js;
+import React, {useState} from 'react';
+import FooterDrop from "./Footer.js";
 
 function Footer () {
     const [isHovering, setHover] = useState("false");

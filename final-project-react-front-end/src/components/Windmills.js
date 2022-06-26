@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from React.js;
+import React, {useState, useEffect} from 'react';
 import Listingcard from "./Listingcard.js";
 
 function Windmills () {

@@ -1,8 +1,13 @@
-import React from React.js;
+import React from 'react';
 import {Switch, Route} from "react-router-dom";
-import Header from "./Header.js";
-import FilterType from "./FilterType.js";
-import Footer from "./Footer.js";
+import Header from "./components/Header.js";
+import FilterType from "./components/FilterType.js";
+import Artic from "./components/Artic.js";
+import Castles from "./components/Castles.js";
+import IconicCities from "./components/IconicCities.js";
+import Treehouses from "./components/Treehouses.js";
+import Windmills from "./components/Windmills.js";
+import Footer from "./components/Footer.js";
 
 
 function App () {

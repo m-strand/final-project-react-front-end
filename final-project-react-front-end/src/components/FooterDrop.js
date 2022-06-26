@@ -1,4 +1,4 @@
-import React, {useState} from React.js;
+import React, {useState} from 'react';
 
 function FooterDrop () {
     return (

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from React.js;
+import React, {useState, useEffect} from 'react';
 import Listingcard from "./Listingcard.js";
 
 function Treehouses () {
@@ -7,7 +7,7 @@ function Treehouses () {
     useEffect(() => {
         fetch("http://localhost:3000/")
         .then((response) => response.json())
-        .then((data) => {setArticListings(data.treehouses)});
+        .then((data) => {setTreehouseListings(data.treehouses)});
     },[]);
     
     return (
